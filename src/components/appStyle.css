@@ -1,0 +1,7 @@
+.top-and-side-bar {
+  display: flex;
+}
+
+.sidebar-main-container {
+  width: 25%;
+}
