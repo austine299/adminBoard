@@ -1,9 +1,7 @@
-import Table from "../Table";
+import Table from "./Table";
 import Details from "../Details";
 
-let profile1 = Details.filter((Detail) => Detail.id === 1).map(
-  (Detail) => Detail.profile
-);
+
 
 function Dashboard() {
   return (
@@ -63,7 +61,7 @@ function Dashboard() {
             borderRadius: "5rem",
             marginRight: "1rem",
           }}
-          src={profile1}
+          src="asset\images\face1.jpg"
         />
         <div>
           <b>School Website - Authentication Module.</b>

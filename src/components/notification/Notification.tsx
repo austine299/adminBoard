@@ -1,20 +1,6 @@
 import React, { useState } from "react";
 import "../navTopStyles.css";
-import Table from "../Table";
-import Details from "../../Details";
 
-let profile1 = Details.filter((Detail) => Detail.id === 1).map(
-  (Detail) => Detail.profile
-);
-let profile2 = Details.filter((Detail) => Detail.id === 2).map(
-  (Detail) => Detail.profile
-);
-let profile3 = Details.filter((Detail) => Detail.id === 3).map(
-  (Detail) => Detail.profile
-);
-let profile4 = Details.filter((Detail) => Detail.id === 4).map(
-  (Detail) => Detail.profile
-);
 
 function Notification() {
   const [active, setActive] = useState(false);

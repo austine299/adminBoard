@@ -5,9 +5,7 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import Fullcalendar from "@fullcalendar/react";
 
 function Calendar() {
-  const handleDateClick = (arg) => {
-    alert(arg.dateStr);
-  };
+  
   return (
     <div className="calender-body">
       <Fullcalendar

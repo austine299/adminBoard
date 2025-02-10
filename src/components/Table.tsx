@@ -2,7 +2,7 @@ import React from "react";
 import Profile from "./Profile";
 import Details from "../Details";
 
-function Table(props) {
+function Table(props:any) {
   return (
     <tr className="ticket-row">
       <td>
