@@ -4,7 +4,7 @@ import Details from "../Details";
 import Calendar from "./Calendar";
 import Dashboard from "./Dashboard";
 
-function ProfileDetails(myDetails) {
+function ProfileDetails(myDetails:any) {
   return (
     <Table
       profile={myDetails.profile}

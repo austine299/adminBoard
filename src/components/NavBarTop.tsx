@@ -28,58 +28,58 @@ function TopBar() {
   const handleClickNotification = () => {
     setToggleNotification(!toggleNotification);
   };
-  let menuRef = useRef();
-  useEffect(() => {
-    let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
-        setToggleActivity(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
+  // let menuRef = useRef();
+  // useEffect(() => {
+  //   let handler = (e:any) => {
+  //     if (!menuRef.current.contains(e.target)) {
+  //       setToggleActivity(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown", handler);
 
-    return () => {
-      document.addEventListener("mousedown", handler);
-    };
-  });
+  //   return () => {
+  //     document.addEventListener("mousedown", handler);
+  //   };
+  // });
 
-  useEffect(() => {
-    let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
-        setToggleMessage(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
+  // useEffect(() => {
+  //   let handler = (e:any) => {
+  //     if (!menuRef.current.contains(e.target)) {
+  //       setToggleMessage(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown", handler);
 
-    return () => {
-      document.addEventListener("mousedown", handler);
-    };
-  });
+  //   return () => {
+  //     document.addEventListener("mousedown", handler);
+  //   };
+  // });
 
-  useEffect(() => {
-    let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
-        setToggleNotification(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
+  // useEffect(() => {
+  //   let handler = (e:any) => {
+  //     if (!menuRef.current.contains(e.target)) {
+  //       setToggleNotification(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown", handler);
 
-    return () => {
-      document.addEventListener("mousedown", handler);
-    };
-  });
+  //   return () => {
+  //     document.addEventListener("mousedown", handler);
+  //   };
+  // });
 
-  useEffect(() => {
-    let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
-        setToggleIconnav(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
+  // useEffect(() => {
+  //   let handler = (e:any) => {
+  //     if (!menuRef.current.contains(e.target)) {
+  //       setToggleIconnav(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown", handler);
 
-    return () => {
-      document.addEventListener("mousedown", handler);
-    };
-  });
+  //   return () => {
+  //     document.addEventListener("mousedown", handler);
+  //   };
+  // });
 
   return (
     <div className="navbody">
@@ -105,7 +105,7 @@ function TopBar() {
           />
         </form>
 
-        <div className="navbar-container" ref={menuRef}>
+        <div className="navbar-container">
           <div className="pointer logActive" onClick={handleClickActivity}>
             <Profile />
             <CircleDot />
@@ -123,14 +123,13 @@ function TopBar() {
               className="fa fa-fullscreen"
               style={{ height: "1rem" }}
               src="asset\images\fullscreen.svg"
-              className="my-icons fa fa-line-height"
             />
           </span>
           <div className="notify-warning">
             <span
               className="my-icons fa fa-envelope pointer"
               onClick={handleClickMessage}
-              ref={menuRef}
+              
             ></span>
             <div className="count-symbol bg-warning"></div>
           </div>
@@ -139,7 +138,7 @@ function TopBar() {
             <span
               className="my-icons fa fa-bell pointer"
               onClick={handleClickNotification}
-              ref={menuRef}
+              
             ></span>
             <div className="count-symbol bg-danger"></div>
           </div>
@@ -156,7 +155,7 @@ function TopBar() {
           <div
             className="navbar mobile-toggler"
             onClick={handleClickToggleNav}
-            ref={menuRef}
+            
           >
             <span className="navbar-toggler-icon"></span>
           </div>

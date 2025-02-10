@@ -47,7 +47,7 @@ function Message() {
                   borderRadius: "5rem",
                   marginRight: "1rem",
                 }}
-                src={profile1}
+                src="asset\images\face1.jpg"
               />
               <span>
                 <p>Mark send you a message</p>
@@ -70,7 +70,7 @@ function Message() {
                   borderRadius: "5rem",
                   marginRight: "1rem",
                 }}
-                src={profile2}
+                src="asset\images\face2.jpg"
               />
               <span>
                 <p>Cregh send you a message</p>
@@ -93,7 +93,7 @@ function Message() {
                   borderRadius: "5rem",
                   marginRight: "1rem",
                 }}
-                src={profile3}
+                src="asset\images\face3.jpg"
               />
               <span>
                 <p>Profile picture updated</p>
